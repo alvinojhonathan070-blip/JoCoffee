@@ -7,45 +7,34 @@
   <link rel="stylesheet" href="style.css">
   <title>Jo Coffee</title>
 </head>
-<body class="bg-black font-montserrat">
+<body class="bg-inherit font-montserrat">
 
   <!-- HERO SECTION -->
-  <section class="bg-[#0B38A9] w-full min-h-dvh flex flex-col justify-between items-center relative overflow-hidden">
-    
+  <section class="bg-[#0B38A9] w-full h-dvh flex flex-col items-center overflow-hidden">
+
     <!-- NAVBAR -->
-    <nav class="w-90 flex flex-row justify-between items-center z-10 ">
-      <img src="images/LOGO JOCOFFEE.webp" fetchpriority="high" alt="Jo Coffee Logo" class="h-24 object-contain">
-      <button aria-label="Open Menu" class="p-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-          <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
-        </svg>
-      </button>
-    </nav>
+<nav class="w-full px-3 flex flex-row justify-between items-center absolute z-10 "> <img src="images/LOGO JOCOFFEE.webp" fetchpriority="high" alt="Jo Coffee Logo" class="h-24 object-contain"> <button aria-label="Open Menu" class="p-2"> <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"> <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/> </svg> </button> </nav>
 
     <!-- MAIN HERO CONTENT -->
-    <div class="flex flex-col items-center top-30 absolute px-4 z-10">
-      <h1 class="text-white font-semibold text-4xl tracking-tight">
-        It's More Than Coffee
-      </h1>
-    </div>
+    <h1 class="mt-[25%] text-white text-4xl font-semibold text-center">
+      It's More Than Coffee
+    </h1>
 
     <!-- CARD & IMAGE CONTAINER -->
-    <div class="w-88 flex justify-center absolute top-77 px-4 h-full">
-      <div class="bg-white rounded-t-3xl border-4 border-[#030712] w-full max-w-sm flex flex-col items-center relative">
-        
-        <!-- Coffee Image with Hover Transition -->
-        <img 
-          src="images/KOPI (1).webp" 
-          fetchpriority="high" 
-          alt="Jo Coffee Cup"
-          class="h-88 w-63 -translate-y-25 object-contain hover:scale-110 transition-transform duration-300 drop-shadow-2xl"
-        >
+    <div class="h-[65%] pb-[3%] mt-auto gap-5 bg-white rounded-t-3xl border-t-4 border-l-4 border-r-4 border-[#030712] w-[90%] flex flex-col items-center relative">
 
-        <!-- CTA Button -->
-        <a href="#discover" class="-translate-y-18 h-10 text-black font-medium w-35 flex justify-center items-center rounded-4xl hover:scale-105 hover:bg-yellow-400 transition duration-500 bg-white/20 backdrop-blur-sm active:scale-90 border-[0.5px] border-gray-300 shadow-[inset_0_1px_10px_rgba(0,0,0,0.5),0_6px_16px_rgba(0,0,0,0.3)]">
-          Discover More!
-        </a>
-      </div>
+      <!-- Coffee Image with Hover Transition -->
+      <img 
+        src="images/KOPI (1).webp" 
+        fetchpriority="high" 
+        alt="Jo Coffee Cup"
+        class="-mt-[20%] h-[100%] w-auto object-contain active:scale-110 transition-transform duration-300 drop-shadow-2xl"
+      >
+
+      <!-- CTA Button -->
+      <a href="#discover" class="h-10 text-black font-medium w-[45%] flex justify-center items-center rounded-4xl transition bg-white/20 backdrop-blur-sm active:scale-90 active:bg-yellow-400 border-[0.5px] border-gray-300 shadow-[inset_0_1px_10px_rgba(0,0,0,0.5),0_6px_16px_rgba(0,0,0,0.3)]">
+        Discover More!
+      </a>
     </div>
 
   </section>
