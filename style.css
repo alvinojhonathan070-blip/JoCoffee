@@ -30,3 +30,17 @@
 html{
     scroll-behavior: smooth;
 }
+
+@keyframes navHidden{
+    to{
+        opacity:0;
+        transform: translateY(-100%);
+    }
+}
+
+#navbar{
+    animation: navHidden linear;
+    animation-timeline: scroll();
+    animation-range: 0% 80%;
+    animation-fill-mode:forwards
+}
