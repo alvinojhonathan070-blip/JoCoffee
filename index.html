@@ -5,46 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Jo Coffee</title>
+  <link  rel="icon" type="images/x-icon" href="images/LOGO JOCOFFEE.webp">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-inherit font-montserrat">
 
   <!-- HERO SECTION -->
-  <section id="home" class="bg-[#0B38A9] w-full h-dvh flex flex-col items-center overflow-hidden">
+  <section id="home" class="bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full h-dvh flex flex-col items-center overflow-hidden">
   
   <!-- HIDDEN NAVBAR MOBILE -->
- <div id="hiddenNav" class="-translate-y-4 left-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-4 pt-8 gap-3 flex flex-col z-20 h-full w-[75%]">
+ <div id="hiddenNav" class="-translate-y-4 left-0 opacity-0 pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-5 pt-12 gap-3 flex flex-col z-20 h-dvh w-[75%]">
   <input 
       type="text" 
       placeholder="Search..." 
-      class="w-[90%] bg-gray-50 text-sm text-gray-800 rounded-lg pl-3 pr-9 py-2 border border-gray-200 focus:outline-none focus:border-black transition-colors">
-  <ul id="listNav" class="flex text-md flex-col gap-2">
+      class="w-[90%] bg-gray-50 text-md text-gray-800 rounded-lg pl-3 pr-9 py-2 border border-gray-200 focus:outline-none focus:border-black transition-colors">
+  <ul id="listNav" class="flex text-md flex-col gap-3">
     <li>
-      <a class="flex items-center gap-2" href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house preview-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+      <a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 pl-1 py-1 w-[35%] transition flex items-center gap-2" href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house preview-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         <span>Home</span>
         </svg>
       </a>
     </li>
     
     <li>
-      <a class="flex gap-2 items-center" href="#about">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info preview-icon"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+      <a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 pl-1 py-1 w-[35%] flex gap-2 items-center" href="#about">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info preview-icon"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
         <span>About</span>
         </svg>
       </a>
     </li>
 
     <li>
-    <a class="flex gap-2 items-center" href="#menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee preview-icon"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/>
+    <a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 pl-1 py-1 w-[35%] flex gap-2 items-center" href="#menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee preview-icon"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/>
       <span>Menu</span>
       </svg>
     </a>
     </li>
 
-  <li><a class="flex gap-2 items-center" href="#location">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin preview-icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
+  <li><a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 pl-1 py-1 w-[35%] flex gap-2 items-center" href="#location">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin preview-icon"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>
     <span>Location</span>
     </svg>
     </a>
@@ -53,7 +54,7 @@
   </div>
   
     <!-- NAVBAR -->
-<nav id="navbar" class="fixed w-full px-3 flex flex-row justify-between items-center z-5 "> 
+<nav id="navbar" class="fixed w-full px-5 top-[2%] flex flex-row justify-between items-center z-5 "> 
   <img src="images/LOGO JOCOFFEE.webp" fetchpriority="high" alt="Jo Coffee Logo" class="h-24 object-contain">
   
 <button 
@@ -85,7 +86,7 @@
 </nav>
 
     <!-- MAIN HERO CONTENT -->
-    <h1 class="mt-[25%] text-white text-[34px] text-nowrap font-semibold text-center">
+    <h1 class="text-shadow-black text-shadow-[-1px_1.3px_5px] mt-[30%] text-white text-[34px] text-nowrap font-semibold text-center">
       It's More Than Coffee
     </h1>
 
@@ -97,7 +98,7 @@
         src="images/KOPI (1).webp" 
         fetchpriority="high" 
         alt="Jo Coffee Cup"
-        class="-mt-[15%] h-[95%] w-auto object-contain active:scale-110 transition-transform duration-300 drop-shadow-2xl"
+        class="-mt-[20%] h-[95%] w-auto object-contain active:scale-110 transition-transform duration-300 drop-shadow-2xl"
       >
 
       <!-- CTA Button -->
@@ -109,7 +110,7 @@
   </section>
 
   <!-- NEXT SECTION -->
-  <section id="about" class="bg-white w-full min-h-dvh px-6 py-12 text-white">
+  <section id="about" class="bg-[#F4F6FC] w-full h-dvh flex flex-col items-center overflow-hidden">
     <!-- Konten section berikutnya -->
   </section>
 <script src="script.js"></script>

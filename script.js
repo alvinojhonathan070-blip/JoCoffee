@@ -9,9 +9,9 @@ function openNav() {
   requestAnimationFrame(() => {
     navbarMobile.classList.remove("opacity-0");
     navbarMobile.classList.add("opacity-100");
-    navbarMobile.style.animation = "navHidden linear";
+    navbarMobile.style.animation = "navHidden2 linear";
     navbarMobile.style.animationTimeline = "scroll()";
-    navbarMobile.style.animationRange = "0% 80%";
+    navbarMobile.style.animationRange = "0% 100%";
     navbarMobile.style.animationFillMode = "forwards";
   });
 }
@@ -22,7 +22,6 @@ function closeNav() {
   navbarMobile.style.removeProperty("animation-timeline");
   navbarMobile.style.removeProperty("animation-range");
   navbarMobile.style.removeProperty("animation-fill-mode");
-
   navbarMobile.classList.remove("opacity-100");
   navbarMobile.classList.add("opacity-0", "pointer-events-none");
 }

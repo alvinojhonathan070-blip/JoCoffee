@@ -38,6 +38,13 @@ html{
     }
 }
 
+@keyframes navHidden2{
+    to{
+        opacity:0;
+    }
+}
+
+
 #navbar{
     animation: navHidden linear;
     animation-timeline: scroll();
