@@ -35,6 +35,7 @@ listNav.addEventListener("click", (e) => {
   if (e.target.closest("a")) closeNav();
 });
 
+//searchbar
 const search = document.getElementById("search");
 const tabs = document.querySelectorAll(".tab");
 const items = document.querySelectorAll(".menu-item");
