@@ -34,3 +34,40 @@ btnNav.addEventListener("click", () => {
 listNav.addEventListener("click", (e) => {
   if (e.target.closest("a")) closeNav();
 });
+
+const search = document.getElementById("search");
+const tabs = document.querySelectorAll(".tab");
+const items = document.querySelectorAll(".menu-item");
+const empty = document.getElementById("empty");
+let category = "all";
+
+function applyFilter() {
+  const keyword = search.value.toLowerCase().trim();
+  let found = 0;
+
+  items.forEach((item) => {
+    const matchCategory = category === "all" || item.dataset.category === category;
+    const matchText = item.textContent.toLowerCase().includes(keyword);
+    const show = matchCategory && matchText;
+    item.classList.toggle("hidden", !show);
+    if (show) found++;
+  });
+
+  empty.classList.toggle("hidden", found > 0);
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    category = tab.dataset.filter;
+    tabs.forEach((t) => {
+      const active = t === tab;
+      t.classList.toggle("bg-[#0B38A9]", active);
+      t.classList.toggle("text-white", active);
+      t.classList.toggle("bg-white", !active);
+      t.classList.toggle("text-[#0B38A9]", !active);
+    });
+    applyFilter();
+  });
+});
+
+search.addEventListener("input", applyFilter);
