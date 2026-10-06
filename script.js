@@ -67,44 +67,65 @@ tabs.forEach((tab) => {
   });
 });
 
-search.addEventListener("input", applyFilter);
+search.addEventListener("input", applyFilter());
 
 // searchbarLOCATION
 const searchLoc = document.getElementById("searchLOC");
 const locTabs = document.querySelectorAll(".tab-loc");
 const locCard = document.querySelectorAll(".location-card");
 const emptyLoc = document.getElementById("emptyLoc");
+
 let currentCity = "all";
 
-function searchLocation () {
-  searchLoc.addEventListener("input", () => {
-  const keyword = searchLoc.value.trim()
-  const regex = new RegExp(keyword, "i")
+function filterLocation() {
+  const keyword = searchLoc.value.trim();
+  const regex = new RegExp(keyword, "i");
   let found = 0;
 
-  locCard.forEach((card)=> {
-  const city = card.dataset.city
+  locCard.forEach((card) => {
+    const city = card.dataset.city || "";
+    const branchName = card.querySelector("h3")?.innerText || "";
+    const matchSearch = regex.test(city) || regex.test(branchName);
+    const matchTab = currentCity === "all" || currentCity === city;
 
-  if(regex.test(city)){
-    card.classList.remove("hidden");
-    found++
+    if (matchSearch && matchTab) {
+      card.classList.remove("hidden");
+      found++;
+    } else {
+      card.classList.add("hidden");
+    }
+  });
+
+  if (emptyLoc) {
+    if (found > 0) {
+      emptyLoc.classList.add("hidden");
+    } else {
+      emptyLoc.classList.remove("hidden");
+    }
   }
-  else{
-    card.classList.add("hidden")
-  }
-})
-
-if(found > 0){
-  emptyLoc.classList.add("hidden")
-}
-else{
-  emptyLoc.classList.remove("hidden")
 }
 
-})}
+searchLoc.addEventListener("input", applyFilter);
 
-function filterLocation() {
-  
-}
+locTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    currentCity = tab.dataset.city || "all";
 
-searchLocation()
+    locTabs.forEach((t) => {
+      t.classList.add("bg-white", "text-slate-500");
+      t.classList.remove("bg-blue-700", "text-white");
+    });
+    tab.classList.remove("bg-white", "text-slate-500");
+    tab.classList.add("bg-blue-700", "text-white");
+
+    filterLocation();
+  });
+});
+
+const form = document.getElementById("contactForm");
+const btnSubmit = document.getElementById("btnSubmit")
+form.addEventListener("submit", (event) => {
+  event.preventDefault(); 
+  form.reset()
+  btnSubmit.innerText = "Message Sent!"
+});
