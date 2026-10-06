@@ -9,10 +9,6 @@ function openNav() {
   requestAnimationFrame(() => {
     navbarMobile.classList.remove("opacity-0");
     navbarMobile.classList.add("opacity-100");
-    navbarMobile.style.animation = "navHidden2 linear";
-    navbarMobile.style.animationTimeline = "scroll()";
-    navbarMobile.style.animationRange = "0% 100%";
-    navbarMobile.style.animationFillMode = "forwards";
   });
 }
 
@@ -35,7 +31,7 @@ listNav.addEventListener("click", (e) => {
   if (e.target.closest("a")) closeNav();
 });
 
-//searchbar
+//searchbarMENU
 const search = document.getElementById("search");
 const tabs = document.querySelectorAll(".tab");
 const items = document.querySelectorAll(".menu-item");
@@ -54,7 +50,7 @@ function applyFilter() {
     if (show) found++;
   });
 
-  empty.classList.toggle("hidden", found > 0);
+  empty.classList.toggle("hidden" , found > 0);
 }
 
 tabs.forEach((tab) => {
@@ -72,3 +68,43 @@ tabs.forEach((tab) => {
 });
 
 search.addEventListener("input", applyFilter);
+
+// searchbarLOCATION
+const searchLoc = document.getElementById("searchLOC");
+const locTabs = document.querySelectorAll(".tab-loc");
+const locCard = document.querySelectorAll(".location-card");
+const emptyLoc = document.getElementById("emptyLoc");
+let currentCity = "all";
+
+function searchLocation () {
+  searchLoc.addEventListener("input", () => {
+  const keyword = searchLoc.value.trim()
+  const regex = new RegExp(keyword, "i")
+  let found = 0;
+
+  locCard.forEach((card)=> {
+  const city = card.dataset.city
+
+  if(regex.test(city)){
+    card.classList.remove("hidden");
+    found++
+  }
+  else{
+    card.classList.add("hidden")
+  }
+})
+
+if(found > 0){
+  emptyLoc.classList.add("hidden")
+}
+else{
+  emptyLoc.classList.remove("hidden")
+}
+
+})}
+
+function filterLocation() {
+  
+}
+
+searchLocation()

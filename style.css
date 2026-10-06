@@ -38,16 +38,25 @@ html{
     }
 }
 
-@keyframes navHidden2{
-    to{
-        opacity:0;
-    }
-}
-
-
 #navbar{
     animation: navHidden linear;
     animation-timeline: scroll();
     animation-range: 0px 300px;
     animation-fill-mode:forwards;
 }
+
+.chip-active { background:#2743E0; color:#fff; border-color:#2743E0; }
+  .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 32px -16px rgba(29,46,143,.25); }
+  /* decorative map grid */
+  .map-grid {
+    background-image:
+      linear-gradient(rgba(39,67,224,.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(39,67,224,.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .pin-pulse::after {
+    content:''; position:absolute; inset:-10px; border-radius:9999px;
+    background:rgba(39,67,224,.18); animation:pulse 2s infinite;
+  }
+  @keyframes pulse { 0%{transform:scale(.6);opacity:1} 100%{transform:scale(1.6);opacity:0} }
