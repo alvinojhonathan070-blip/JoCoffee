@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "dev": "tailwindcss -i ./input.css -o ./style.css --watch"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alvinojhonathan070-blip/JoCoffee.git"

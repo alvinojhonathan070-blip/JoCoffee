@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
   <title>Jo Coffee</title>
   <link  rel="icon" type="images/x-icon" href="images/LOGO JOCOFFEE.webp">
@@ -11,15 +10,20 @@
 <body class="bg-inherit font-montserrat">
 
   <!-- HERO SECTION -->
-  <section id="home" class="px-[1%] bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full min-h-dvh flex flex-col items-center overflow-clip">
-  
+  <section id="home" class="
+  px-[5%] bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full min-h-dvh flex flex-col items-center overflow-clip
+  ">
   <!-- HIDDEN NAVBAR MOBILE -->
- <div id="hiddenNav" class= "left-0 opacity-0 h-svh pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-5 pt-9 gap-5 flex flex-col z-20 w-[75%]">
+ <div id="hiddenNav" class= "
+  left-0 opacity-0 h-svh pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-5 pt-9 gap-5 flex flex-col z-20 w-[75%]
+  lg:hidden
+ ">
   <input 
       type="text" 
-      placeholder="Search..." 
+      placeholder="🔎︎  Search..." 
       class="w-[90%] bg-gray-50 text-md text-gray-800 rounded-lg pl-3 pr-9 py-2 border border-gray-200 focus:outline-none focus:border-black transition">
-  <ul id="listNav" class="flex text-md flex-col gap-3">
+  <ul id="listNav" class="
+  flex text-md flex-col gap-3">
     <li>
       <a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 transition pl-1 py-1 w-[35%] flex items-center gap-2" href="#home">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house preview-icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -61,13 +65,18 @@
   </div>
   
     <!-- NAVBAR -->
-<nav id="navbar" class="fixed inset-x-0 max-w-full shrink px-5 top-[2%] flex flex-row justify-between items-center z-5 "> 
-  <img src="images/LOGO JOCOFFEE.webp" fetchpriority="high" alt="Jo Coffee Logo" class="h-24 object-contain">
+<nav id="navbar" class="fixed inset-x-0 max-w-full shrink px-[5%] top-[2%] flex flex-row justify-between items-center z-5 "> 
+  <img src="images/LOGO JOCOFFEE.webp" fetchpriority="high" alt="Jo Coffee Logo" class="
+  h-24 object-contain
+  md:scale-140">
   
 <button 
   id="btnNav" 
   aria-label="Open Menu" 
-  class="group p-2 active:scale-110 transition focus:outline-none"
+  class="
+  group p-2 active:scale-110 transition focus:outline-none
+  md:scale-130
+  lg:hidden"
 >
   <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <!-- Garis Atas -->
@@ -93,27 +102,67 @@
 </nav>
 
     <!-- MAIN HERO CONTENT -->
-    <h1 class="text-shadow-black text-shadow-[-1px_1.3px_5px] mt-[30%] text-white text-[34px] text-nowrap font-semibold text-center">
+    <h1 class="
+    text-shadow-black text-shadow-[-1px_1.3px_5px] mt-[30%] text-white text-[34px] text-nowrap font-semibold text-center
+    md:z-2 md:text-6xl md:mt-[20%] md:pb-[20%] md:text-shadow-[-3px_4px_5px]
+    lg:hidden
+    ">
       It's More Than Coffee
     </h1>
 
     <!-- CARD & IMAGE CONTAINER -->
-    <div class="h-[65%] pb-[7%] mt-auto gap-9 bg-white rounded-t-3xl border-t-4 border-l-4 border-r-4 border-[#030712] w-[90%] flex flex-col items-center relative">
+    <div class="
+    h-[65%] pb-[7%] mt-auto gap-9 bg-white rounded-t-3xl border-t-4 border-l-4 border-r-4 border-[#030712] w-[90%] flex flex-col items-center relative
+    lg:hidden
+    ">
 
       <!-- Coffee Image with Hover Transition -->
       <img 
         src="images/KOPI (1).webp" 
         fetchpriority="high" 
         alt="Jo Coffee Cup"
-        class="-mt-[20%] h-[95%] w-auto object-contain active:scale-110 transition-transform duration-300 drop-shadow-2xl"
+        class="
+        -mt-[20%] h-[95%] w-auto object-contain active:scale-110 transition-transform duration-300 drop-shadow-2xl
+        lg:hidden
+        "
       >
 
       <!-- CTA Button -->
-      <a href="#about" class="pt-0.5 h-10 text-black font-semibold w-[45%] flex justify-center items-center rounded-xl transition bg-white backdrop-blur-3xl  active:scale-90 transition active:bg-yellow-400 border-0 shadow-[inset_0_2px_3px_rgba(0,0,0,0.4),0_3px_10px_rgba(0,0,0,0.5)]">
+      <a href="#about" class="
+      pt-0.5 h-10 text-black font-semibold w-[45%] flex justify-center items-center rounded-xl bg-white backdrop-blur-3xl active:scale-90 transition active:bg-yellow-400 border-0 shadow-[inset_0_2px_3px_rgba(0,0,0,0.4),0_3px_10px_rgba(0,0,0,0.5)]
+      md:text-2xl md:h-17 md:rounded-3xl
+      lg:hidden
+      ">
         Discover More!
       </a>
     </div>
+<!--DESKTOP HERO-->
+    <div class="hidden lg:flex pt-20 relative w-full h-auto items-center justify-between px-10 mt-10">
+    
+      <div class="flex flex-col items-start gap-5 w-1/2 z-10">
+        <div class="flex flex-col gap-1">
+          <h1 class="text-shadow-black text-shadow-[-1px_1.3px_5px] text-white text-[70px] text-nowrap leading-tight font-bold text-left">
+          It's More Than Coffee
+          </h1>
+        <h2 class="text-shadow-black text-shadow-[-1px_1.3px_5px] text-white text-[25px] leading-tight font-medium text-left">
+          Try It, So You'll Know It.
+        </h2>
+          </div>
+        <a href="#about" class="pt-0.5 h-12 text-black text-lg font-bold px-10 flex justify-center items-center rounded-xl bg-white hover:scale-95 transition hover:bg-yellow-400 border-0 shadow-[inset_0_2px_3px_rgba(0,0,0,0.4),0_3px_10px_rgba(0,0,0,0.5)]">
+          Discover More!
+        </a>
+      </div>
 
+      <!-- Bagian Kanan: Gambar -->
+      <div class="flex justify-end w-1/2">
+        <img 
+          src="images/KOPI (1).webp" 
+          fetchpriority="high" 
+          alt="Jo Coffee Cup"
+          class="h-[500px] w-auto object-cover hover:scale-110 transition-transform duration-300 drop-shadow-2xl">
+      </div>
+      
+    </div>
   </section>
 
   <!-- NEXT SECTION -->
@@ -125,7 +174,9 @@
       src="images/BARISTA.webp"
       alt="Barista jocoffee sedang menyeduh kopi"
       loading="lazy"
-      class="size-full object-cover object-center"
+      class="
+      size-full object-cover object-center
+      lg:object-center"
     />
     <span class="absolute bottom-3 left-3 rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-[#0B38A9] shadow">
       Since 2011
@@ -182,15 +233,38 @@
   </div>
 
   <!-- Search -->
-    <input id="search" type="search" placeholder="Search your favorite..."
-      class="mt-5 w-full rounded-xl border border-[#D5DDF3] bg-[#F4F6FC] py-3 pl-4 pr-4 text-sm text-[#0B38A9] placeholder:text-[#0B38A9]/50 outline-none focus:border-[#0B38A9] focus:ring-2 focus:ring-[#0B38A9]/20" />
+    <input id="search" type="search" placeholder="🔎︎  Search your favorite..."
+      class="
+      mt-5 w-full rounded-xl border border-[#D5DDF3] bg-[#F4F6FC] py-3 pl-4 pr-4 text-sm text-[#0B38A9] placeholder:text-[#0B38A9]/50 outline-none focus:border-[#0B38A9] focus:ring-2 focus:ring-[#0B38A9]/20
+      lg:w-[50%]
+      " />
 
   <!-- Tabs kategori -->
-  <div class="mt-4 gap-auto flex justify-between w-full">
-    <button data-filter="all" class="tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-[#0B38A9] px-4 py-2 text-sm font-medium text-white">All</button>
-    <button data-filter="coffee" class="tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9]">Coffee</button>
-    <button data-filter="non-coffee" class="tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9]">Non-coffee</button>
-    <button data-filter="snacks" class="tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9]">Snacks</button>
+  <div class="
+  mt-4 gap-auto flex justify-between w-full
+  md:gap-10
+  lg:w-[50%] lg:gap-0
+  ">
+    <button data-filter="all" class="
+    tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-[#0B38A9] px-4 py-2 text-sm font-medium text-white 
+    md:w-full
+    lg:w-[20%]
+    ">All</button>
+    <button data-filter="coffee" class="
+    tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9] 
+    md:w-full
+    lg:w-[20%]
+    ">Coffee</button>
+    <button data-filter="non-coffee" class="
+    tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9] 
+    md:w-full
+    lg:w-[20%]
+    ">Non-coffee</button>
+    <button data-filter="snacks" class="
+    tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9]
+    md:w-full
+    lg:w-[20%]
+    ">Snacks</button>
   </div>
 
   <!-- Grid menu -->
@@ -224,7 +298,7 @@
 
     <article data-category="non-coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
       <div class="aspect-square overflow-clip bg-[#0B38A9]">
-        <img src="images/Matcha.webp" alt="Matcha Latte" loading="lazy" class="object-cover object-[0_67%] size-56 transition duration-500 group-hover:scale-110" />
+        <img src="images/Matcha.webp" alt="Matcha Latte" loading="lazy" class="object-cover object-[0_67%] size-full transition duration-500 group-hover:scale-110" />
       </div>
       <div class="p-3">
         <h3 class="font-semibold text-[#0B38A9]">Matcha Latte</h3>
@@ -261,16 +335,28 @@
   <!-- Search -->
   <div class="relative mb-5">
     <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.5-3.5"/></svg>
-    <input id="searchLOC" type="text" placeholder="Search your city..."
+    <input id="searchLOC" type="text" placeholder="🔎︎  Search your city..."
       class="w-full rounded-2xl border border-indigo-100 bg-white/80 py-3.5 pl-12 pr-4 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/30" />
   </div>
 
   <!-- Filter chips -->
   <div class="flex w-full gap-auto justify-between pb-6">
-    <button data-city="all" class="tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-blue-700 px-5 py-2 text-sm font-semibold text-white">All</button>
-    <button data-city="jakarta" class="tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500">Jakarta</button>
-    <button data-city="bandung" class="tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500">Bandung</button>
-    <button data-city="surabaya" class="tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500">Surabaya</button>
+    <button data-city="all" class="
+    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-blue-700 px-5 py-2 text-sm font-semibold text-white
+    w-[20%]
+    ">All</button>
+    <button data-city="jakarta" class="
+    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-[20%]
+    ">Jakarta</button>
+    <button data-city="bandung" class="
+    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-[20%]
+    ">Bandung</button>
+    <button data-city="surabaya" class="
+    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-[20%]
+    ">Surabaya</button>
   </div>
 
   <!-- cards -->
@@ -359,7 +445,7 @@
 
 </section>
 
-<section id="contact" class="h-auto w-full bg-white px-[5%] py-12 overflow-clip">
+<section id="contact" class="min-h-dvh h-auto w-full bg-white px-[5%] py-12 overflow-clip">
   
   <!-- Heading -->
   <div class="Contact text-center mb-8">

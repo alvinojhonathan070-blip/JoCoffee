@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+@theme {
+  --font-archivo: 'Archivo Black', sans-serif;
+  --font-arimo: 'Arimo', sans-serif;
+  --font-barlow: 'Barlow Condensed', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-germania: 'Germania One', cursive;
+  --font-inter: 'Inter', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-orbitron: 'Orbitron', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-roboto-condensed: 'Roboto Condensed', sans-serif;
+  --font-sekuya: 'Sekuya', sans-serif;
+  --font-valley: 'Valley Sans', sans-serif;
+}
+
+.font-arimo {
+    font-family:'arimo', serif;
+}
+.font-cinzel{
+    font-family:'cinzel', serif;
+}
+.font-oswald{
+    font-family:'Oswald', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes navHidden{
+    to{
+        opacity:0;
+        transform: translateY(-100%);
+    }
+}
+
+#navbar{
+    animation: navHidden linear;
+    animation-timeline: scroll();
+    animation-range: 0px 300px;
+    animation-fill-mode:forwards;
+}
+
+@keyframes scroll {
+  from {
+    opacity: 0;
+    margin-top:50px;
+  }
+  to {
+    opacity: 1;
+    margin-top:0;
+  }
+}
+
+.imageBarista{
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: 0% 70%;
+  }
+
+.Menu{
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: 0% 70%;
+  }
+
+.Location{
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: 0% 70%;
+  }
+
+.Contact{
+    animation: scroll linear both;
+    animation-timeline: view();
+    animation-range: 0% 70%;
+  }
+
+.navDesktop{
+  animation: navHidden linear;
+  animation-timeline: scroll();
+  animation-range: 0px 300px;
+  animation-fill-mode:forwards;
+}
