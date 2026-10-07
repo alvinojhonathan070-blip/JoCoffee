@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loadingScreen");
+  loader.style.display = "none"
+})
+
 const navbarMobile = document.getElementById("hiddenNav");
 const btnNav = document.getElementById("btnNav");
 const listNav = document.getElementById("listNav");
