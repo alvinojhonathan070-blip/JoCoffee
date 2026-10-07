@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
   <title>Jo Coffee</title>
   <link  rel="icon" type="images/x-icon" href="images/LOGO JOCOFFEE.webp">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-inherit font-montserrat">
 
   <!-- HERO SECTION -->
-  <section id="home" class="px-[1%] bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full min-h-dvh flex flex-col items-center overflow-hidden">
+  <section id="home" class="px-[1%] bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full min-h-dvh flex flex-col items-center overflow-clip">
   
   <!-- HIDDEN NAVBAR MOBILE -->
  <div id="hiddenNav" class= "left-0 opacity-0 h-svh pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-5 pt-9 gap-5 flex flex-col z-20 w-[75%]">
@@ -117,10 +117,10 @@
   </section>
 
   <!-- NEXT SECTION -->
-  <section id="about" class="h-auto w-full content-start gap-10 bg-[#F4F6FC] px-[5%] py-8 grid overflow-hidden">
+  <section id="about" class="h-auto w-full content-start gap-10 bg-[#F4F6FC] px-[5%] py-8 grid overflow-clip">
 
   <!-- Gambar -->
-  <div class="mt-[3%] relative h-[32dvh] overflow-hidden rounded-3xl bg-[#0B38A9]">
+  <div class="imageBarista mt-[3%] relative h-[32dvh] overflow-clip rounded-3xl bg-[#0B38A9]">
     <img
       src="images/BARISTA.webp"
       alt="Barista jocoffee sedang menyeduh kopi"
@@ -173,10 +173,10 @@
 
 </section>
 
-<section id="menu" class="min-h-dvh h-auto w-full bg-white px-[5%] py-12 overflow-hidden">
+<section id="menu" class="min-h-dvh h-auto w-full bg-white px-[5%] py-12 overflow-clip">
 
   <!-- Heading -->
-  <div class="text-center">
+  <div class="Menu text-center">
     <p class="text-sm font-medium uppercase tracking-widest text-[#0B38A9]/70">Our menu</p>
     <h2 class="mt-0 text-3xl font-semibold leading-tight text-[#0B38A9]">Pick your perfect cup</h2>
   </div>
@@ -196,8 +196,8 @@
   <!-- Grid menu -->
   <div class="mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-3">
 
-    <article data-category="coffee" class="menu-item group overflow-hidden rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
-      <div class="aspect-square overflow-hidden bg-[#0B38A9]">
+    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+      <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/CafeLatte.webp" alt="Caffe Latte" loading="lazy" class="size-full object-cover transition duration-500 group-hover:scale-110" />
       </div>
       <div class="p-3">
@@ -209,8 +209,8 @@
       </div>
     </article>
 
-    <article data-category="coffee" class="menu-item group overflow-hidden rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
-      <div class="aspect-square overflow-hidden bg-[#0B38A9]">
+    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+      <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/JoLatte.webp" alt="Es Kopi Susu" loading="lazy" class="object-cover   object-[0_68%] size-full transition duration-500 group-hover:scale-110" />
       </div>
       <div class="p-3">
@@ -222,8 +222,8 @@
       </div>
     </article>
 
-    <article data-category="non-coffee" class="menu-item group overflow-hidden rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
-      <div class="aspect-square overflow-hidden bg-[#0B38A9]">
+    <article data-category="non-coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+      <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/Matcha.webp" alt="Matcha Latte" loading="lazy" class="object-cover object-[0_67%] size-56 transition duration-500 group-hover:scale-110" />
       </div>
       <div class="p-3">
@@ -235,7 +235,7 @@
       </div>
     </article>
 
-    <article data-category="snacks" class="menu-item group overflow-hidden rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+    <article data-category="snacks" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
       <div class="aspect-square overflow-hidden bg-[#0B38A9]">
         <img src="images/croissant.webp" alt="Butter Croissant" loading="lazy" class="size-full object-cover transition duration-500 group-hover:scale-110" />
       </div>
@@ -253,7 +253,7 @@
 </section>
 
 <section id="location" class="w-full min-h-dvh h-auto mx-auto px-[5%] pt-10 pb-14 bg-[#F4F6FC]">
-  <p class="text-center text-[11px] tracking-[0.35em] text-slate-400 font-semibold mb-2">FIND US</p>
+  <p class="Location text-center text-[11px] tracking-[0.35em] text-slate-400 font-semibold mb-2">FIND US</p>
   <h2 class="text-center text-[28px] leading-tight font-bold text-ink mb-6">
     Visit us, We're Everywhere.
   </h2>
@@ -359,10 +359,10 @@
 
 </section>
 
-<section id="contact" class="h-auto w-full bg-white px-[5%] py-12 overflow-hidden">
+<section id="contact" class="h-auto w-full bg-white px-[5%] py-12 overflow-clip">
   
   <!-- Heading -->
-  <div class="text-center mb-8">
+  <div class="Contact text-center mb-8">
     <p class="text-[11px] font-semibold uppercase tracking-[0.35em] text-slate-400 mb-2">Get In Touch</p>
     <h2 class="mt-0 text-3xl font-bold leading-tight text-[#0B38A9]">Let's have a chat</h2>
     <p class="mt-2 text-sm text-[#0B38A9]/70">Do you have any question or suggestion? Contact Us!</p>
