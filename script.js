@@ -72,7 +72,7 @@ tabs.forEach((tab) => {
   });
 });
 
-search.addEventListener("input", applyFilter());
+search.addEventListener("input", applyFilter);
 
 // searchbarLOCATION
 const searchLoc = document.getElementById("searchLOC");

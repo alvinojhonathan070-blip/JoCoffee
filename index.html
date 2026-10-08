@@ -8,7 +8,7 @@
   <link  rel="icon" type="images/x-icon" href="images/LOGO JOCOFFEE.webp">
 </head>
 <body class="bg-inherit font-montserrat">
-  <div id="loadingScreen" class="fixed z-[60] inset-0 bg-[#F4F6FC] ...">
+  <div id="loadingScreen" class="fixed z-[40] inset-0 bg-[#F4F6FC] ...">
    <div class="loader"></div>
 </div>
   <!-- HERO SECTION -->
@@ -16,7 +16,7 @@
   px-[5%] bg-gradient-to-r from-[#0B38A9] to-[#3B82F6] w-full min-h-dvh flex flex-col items-center overflow-clip
   ">
   <!--navbar for desktop-->
-<nav class="NavDesk hidden lg:flex fixed top-5 gap-10 right-10 min-w-[42%] items-center justify-between rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-8 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] z-60">
+<nav class="NavDesk hidden lg:flex fixed top-5 gap-10 right-10 min-w-[42%] items-center justify-between rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-8 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.1)] z-50">
 
   <!-- Menu Links -->
   <ul class="flex gap-10 text-white font-medium text-sm tracking-wide">
@@ -38,11 +38,7 @@
   left-0 opacity-0 h-svh pointer-events-none transition-all duration-300 ease-in-out absolute bg-white pl-5 pt-9 gap-5 flex flex-col z-20 w-[75%]
   lg:hidden
  ">
-  <input 
-      type="text" 
-      placeholder="🔎︎  Search..." 
-      class="w-[90%] bg-gray-50 text-md text-gray-800 rounded-lg pl-3 pr-9 py-2 border border-gray-200 focus:outline-none focus:border-black transition">
-  <ul id="listNav" class="
+      <ul id="listNav" class="
   flex text-md flex-col gap-3">
     <li>
       <a class="active:bg-amber-400 active:rounded-md active:border active:scale-90 transition pl-1 py-1 w-[35%] flex items-center gap-2" href="#home">
@@ -253,37 +249,37 @@
   </div>
 
   <!-- Search -->
-    <input id="search" type="search" placeholder="🔎︎  Search your favorite..."
+
+    <input id="search" type="search" placeholder="Search your favorite..."
       class="
       mt-5 w-full rounded-xl border border-[#D5DDF3] bg-[#F4F6FC] py-3 pl-4 pr-4 text-sm text-[#0B38A9] placeholder:text-[#0B38A9]/50 outline-none focus:border-[#0B38A9] focus:ring-2 focus:ring-[#0B38A9]/20
       lg:w-[50%]
       " />
-
   <!-- Tabs kategori -->
   <div class="
   mt-4 gap-auto flex justify-between w-full
   md:gap-10
-  lg:w-[50%] lg:gap-0
+  lg:w-[50%] lg:gap-3
   ">
     <button data-filter="all" class="
     tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-[#0B38A9] px-4 py-2 text-sm font-medium text-white 
     md:w-full
-    lg:w-[20%]
+    lg:w-full
     ">All</button>
     <button data-filter="coffee" class="
     tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9] 
     md:w-full
-    lg:w-[20%]
+    lg:w-full
     ">Coffee</button>
     <button data-filter="non-coffee" class="
     tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9] 
     md:w-full
-    lg:w-[20%]
+    lg:w-full
     ">Non-coffee</button>
     <button data-filter="snacks" class="
     tab active:scale-90 transition rounded-full border border-[#D5DDF3] bg-white px-4 py-2 text-sm font-medium text-[#0B38A9]
     md:w-full
-    lg:w-[20%]
+    lg:w-full
     ">Snacks</button>
   </div>
 
@@ -355,27 +351,29 @@
   <!-- Search -->
   <div class="relative mb-5">
     <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20-3.5-3.5"/></svg>
-    <input id="searchLOC" type="text" placeholder="🔎︎  Search your city..."
+    <input id="searchLOC" type="text" placeholder="Search your city..."
       class="w-full rounded-2xl border border-indigo-100 bg-white/80 py-3.5 pl-12 pr-4 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/30" />
   </div>
 
   <!-- Filter chips -->
-  <div class="flex w-full gap-auto justify-between pb-6">
+  <div class="flex w-full gap-1 justify-between pb-6
+  lg:gap-10
+  ">
     <button data-city="all" class="
-    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-blue-700 px-5 py-2 text-sm font-semibold text-white
-    w-[20%]
+    tab-loc active:scale-90 transition rounded-full border border-indigo-100 bg-blue-700 px-5 py-2 text-sm font-semibold text-white
+    w-full
     ">All</button>
     <button data-city="jakarta" class="
-    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
-    w-[20%]
+    tab-loc active:scale-90 transition rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-full
     ">Jakarta</button>
     <button data-city="bandung" class="
-    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
-    w-[20%]
+    tab-loc active:scale-90 transition rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-full
     ">Bandung</button>
     <button data-city="surabaya" class="
-    tab-loc active:scale-90 transition shrink-0 rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
-    w-[20%]
+    tab-loc active:scale-90 transition rounded-full border border-indigo-100 bg-white px-5 py-2 text-sm font-semibold text-slate-500
+    w-full
     ">Surabaya</button>
   </div>
 
