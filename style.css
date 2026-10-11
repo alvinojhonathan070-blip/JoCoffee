@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -461,9 +462,6 @@
   }
   .min-w-\[42\%\] {
     min-width: 42%;
-  }
-  .flex-1 {
-    flex: 1;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -1057,6 +1055,10 @@
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .hover\:-translate-y-10:hover {
+      --tw-translate-y: calc(var(--spacing) * -10);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
     .hover\:scale-95:hover {
       --tw-scale-x: 95%;
       --tw-scale-y: 95%;
@@ -1068,6 +1070,9 @@
       --tw-scale-y: 110%;
       --tw-scale-z: 110%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:bg-amber-300:hover {
+      background-color: var(--color-amber-300);
     }
     .hover\:bg-blue-800:hover {
       background-color: var(--color-blue-800);
@@ -1213,17 +1218,8 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:mt-8 {
-      margin-top: calc(var(--spacing) * 8);
-    }
     .lg\:mt-10 {
       margin-top: calc(var(--spacing) * 10);
-    }
-    .lg\:mt-15 {
-      margin-top: calc(var(--spacing) * 15);
-    }
-    .lg\:mt-20 {
-      margin-top: calc(var(--spacing) * 20);
     }
     .lg\:flex {
       display: flex;
@@ -1243,6 +1239,12 @@
     .lg\:w-full {
       width: 100%;
     }
+    .lg\:max-w-20 {
+      max-width: calc(var(--spacing) * 20);
+    }
+    .lg\:max-w-\[33\.3\%\] {
+      max-width: 33.3%;
+    }
     .lg\:flex-1 {
       flex: 1;
     }
@@ -1251,9 +1253,6 @@
     }
     .lg\:flex-row {
       flex-direction: row;
-    }
-    .lg\:gap-2 {
-      gap: calc(var(--spacing) * 2);
     }
     .lg\:gap-3 {
       gap: calc(var(--spacing) * 3);
