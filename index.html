@@ -208,8 +208,14 @@
       </h2>
     </div>
 
-    <div class="flex flex-col gap-4">
-      <article class="group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98] ">
+    <div class="
+    flex flex-col gap-4
+    lg:flex-row
+    ">
+      <article class="
+      group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98]
+      lg:flex-1 lg:w-full
+      ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sprout preview-icon"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/></svg>
         <div>
           <h3 class="font-semibold">Our Signature Brew</h3>
@@ -217,7 +223,10 @@
         </div>
       </article>
 
-      <article class="group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98] ">
+      <article class="
+      group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98]
+      lg:flex-1 lg:w-full
+      ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hand-coins preview-icon"><path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17"/><path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/><path d="m2 16 6 6"/><circle cx="16" cy="9" r="2.9"/><circle cx="6" cy="5" r="3"/></svg>
         <div>
           <h3 class="font-semibold">Sip more, save more</h3>
@@ -225,10 +234,13 @@
         </div>
       </article>
 
-      <article class="group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98] ">
+      <article class="
+      group flex items-center gap-6 rounded-2xl border border-[#D5DDF3] bg-white py-3 pl-5 text-[#0B38A9] transition duration-300 active:scale-[0.98]
+      lg:flex-1 lg:w-full
+      ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity preview-icon"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
         <div>
-          <h3 class="font-semibold text-nowrap">More than just coffee</h3>
+          <h3 class="font-semibold">More than just coffee</h3>
           <p class="text-sm opacity-70">Workshops, movie nights, and community events.</p>
         </div>
       </article>
@@ -253,7 +265,7 @@
     <input id="search" type="search" placeholder="Search your favorite..."
       class="
       mt-5 w-full rounded-xl border border-[#D5DDF3] bg-[#F4F6FC] py-3 pl-4 pr-4 text-sm text-[#0B38A9] placeholder:text-[#0B38A9]/50 outline-none focus:border-[#0B38A9] focus:ring-2 focus:ring-[#0B38A9]/20
-      lg:w-[50%]
+      lg:w-[50%] lg:mt-10
       " />
   <!-- Tabs kategori -->
   <div class="
@@ -284,9 +296,14 @@
   </div>
 
   <!-- Grid menu -->
-  <div class="mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-3">
+  <div class="
+  mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-3
+  lg:flex lg:flex-row lg:w-full
+  ">
 
-    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10
+    lg:w-full
+    ">
       <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/CafeLatte.webp" alt="Caffe Latte" loading="lazy" class="size-full object-cover transition duration-500 group-hover:scale-110" />
       </div>
@@ -299,7 +316,9 @@
       </div>
     </article>
 
-    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+    <article data-category="coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10
+    lg:w-full
+    ">
       <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/JoLatte.webp" alt="Es Kopi Susu" loading="lazy" class="object-cover   object-[0_68%] size-full transition duration-500 group-hover:scale-110" />
       </div>
@@ -312,7 +331,9 @@
       </div>
     </article>
 
-    <article data-category="non-coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+    <article data-category="non-coffee" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10
+    lg:w-full
+    ">
       <div class="aspect-square overflow-clip bg-[#0B38A9]">
         <img src="images/Matcha.webp" alt="Matcha Latte" loading="lazy" class="object-cover object-[0_67%] size-full transition duration-500 group-hover:scale-110" />
       </div>
@@ -325,7 +346,9 @@
       </div>
     </article>
 
-    <article data-category="snacks" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10">
+    <article data-category="snacks" class="menu-item group overflow-clip rounded-2xl border border-[#D5DDF3] bg-[#F4F6FC] transition duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#0B38A9]/10
+    lg:w-full
+    ">
       <div class="aspect-square overflow-hidden bg-[#0B38A9]">
         <img src="images/croissant.webp" alt="Butter Croissant" loading="lazy" class="size-full object-cover transition duration-500 group-hover:scale-110" />
       </div>
@@ -342,7 +365,9 @@
 <p id="empty" class="hidden text-center text-sm text-[#0B38A9]/70">No menu found.</p>
 </section>
 
-<section id="location" class="w-full min-h-dvh h-auto mx-auto px-[5%] pt-10 pb-14 bg-[#F4F6FC]">
+<section id="location" class="w-full min-h-dvh h-auto mx-auto px-[5%] pt-10 pb-14 bg-[#F4F6FC]
+lg:h-full lg:min-h-0
+">
   <p class="Location text-center text-[11px] tracking-[0.35em] text-slate-400 font-semibold mb-2">FIND US</p>
   <h2 class="text-center text-[28px] leading-tight font-bold text-ink mb-6">
     Visit us, We're Everywhere.
@@ -377,88 +402,110 @@
     ">Surabaya</button>
   </div>
 
-  <!-- cards -->
-  <div class="space-y-4">
-     <article data-city="jakarta" class="location-card card-hover rounded-3xl border border-indigo-100 bg-white p-5 flex gap-4">
-      <span class="w-11 h-11 shrink-0 grid place-items-center rounded-2xl bg-primary/10 text-primary">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+<div class="grid gap-4 lg:grid-cols-3 lg:gap-8">
+  <!-- Jakarta -->
+  <article data-city="jakarta"
+    class="location-card group flex flex-col rounded-3xl border border-indigo-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30">
+    <header class="flex items-start gap-4">
+      <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white" aria-hidden="true">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
       </span>
-      <div class="flex-1">
-        <div class="flex items-center justify-between gap-2">
-          <h3 class="font-bold text-ink">Menteng Flagship</h3>
-        </div>
-        <p class="text-sm text-slate-400 mt-1">Jl. HOS Cokroaminoto No. 88, Menteng, Jakarta Pusat</p>
-        <div class="flex items-center gap-4 mt-3 text-xs text-slate-400">
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
-            07.00 – 22.00
-          </span>
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-            +62 012 3456 7890
-          </span>
-        </div>
-        <a href="https://maps.app.goo.gl/geWDKtURuT399YtL7" target="_blank">
-        <button class="active:scale-95 transition-all mt-4 w-full rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white">
-          Get Directions
-        </button>
-        </a>
+      <div class="min-w-0">
+        <span class="text-[11px] font-semibold uppercase tracking-wider text-primary">Jakarta</span>
+        <h3 class="font-bold leading-tight text-ink">Menteng Flagship</h3>
+        <address class="mt-1 text-sm not-italic text-slate-500">Jl. HOS Cokroaminoto No. 88, Menteng, Jakarta </address>
       </div>
-    </article>
+    </header>
 
-    <article data-city="bandung" class="location-card card-hover rounded-3xl border border-indigo-100 bg-white p-5 flex gap-4">
-      <span class="w-11 h-11 shrink-0 grid place-items-center rounded-2xl bg-primary/10 text-primary">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+      <li class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5">
+        <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+        <time datetime="07:00">07.00</time>–<time datetime="22:00">22.00</time>
+      </li>
+      <li>
+        <a href="tel:+6201234567890" class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+          <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          +62 012 3456 7890
+        </a>
+      </li>
+    </ul>
+
+    <a href="https://maps.app.goo.gl/geWDKtURuT399YtL7" target="_blank" rel="noopener noreferrer"
+      class="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white transition-all hover:bg-blue-800 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 [margin-top:max(1.25rem,auto)]">
+      Get Directions
+      <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </article>
+
+  <!-- Bandung -->
+  <article data-city="bandung"
+    class="location-card group flex flex-col rounded-3xl border border-indigo-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30">
+    <header class="flex items-start gap-4">
+      <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white" aria-hidden="true">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
       </span>
-      <div class="flex-1">
-        <div class="flex items-center justify-between gap-2">
-          <h3 class="font-bold text-ink">Bandung Dago</h3>
-        </div>
-        <p class="text-sm text-slate-400 mt-1">Jl. Ir. H. Juanda No. 45, Dago, Bandung</p>
-        <div class="flex items-center gap-4 mt-3 text-xs text-slate-400">
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
-            08.00 – 23.00
-          </span>
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-            +62 012 3456 7890
-          </span>
-        </div>
-        <a href="https://maps.app.goo.gl/KYFBV83CJzauArcV7" target="_blank ">
-        <button class="active:scale-95 transition-all mt-4 w-full rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white">
-          Get Directions
-        </button>
-        </a>
+      <div class="min-w-0">
+        <span class="text-[11px] font-semibold uppercase tracking-wider text-primary">Bandung</span>
+        <h3 class="font-bold leading-tight text-ink">Bandung Dago</h3>
+        <address class="mt-1 text-sm not-italic text-slate-500">Jl. Ir. H. Juanda No. 45, Dago, Bandung</address>
       </div>
-    </article>
+    </header>
 
-    <article data-city="surabaya" class="location-card card-hover rounded-3xl border border-indigo-100 bg-white p-5 flex gap-4">
-      <span class="w-11 h-11 shrink-0 grid place-items-center rounded-2xl bg-primary/10 text-primary">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+    <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+      <li class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5">
+        <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+        <time datetime="08:00">08.00</time>–<time datetime="23:00">23.00</time>
+      </li>
+      <li>
+        <a href="tel:+6201234567890" class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+          <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          +62 012 3456 7890
+        </a>
+      </li>
+    </ul>
+
+    <a href="https://maps.app.goo.gl/KYFBV83CJzauArcV7" target="_blank" rel="noopener noreferrer"
+      class="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white transition-all hover:bg-blue-800 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 [margin-top:max(1.25rem,auto)]">
+      Get Directions
+      <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </article>
+
+  <!-- Surabaya -->
+  <article data-city="surabaya"
+    class="location-card group flex flex-col rounded-3xl border border-indigo-100 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary/30">
+    <header class="flex items-start gap-4">
+      <span class="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white" aria-hidden="true">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.1-7-11a7 7 0 1 1 14 0c0 5.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
       </span>
-      <div class="flex-1">
-        <div class="flex items-center justify-between gap-2">
-          <h3 class="font-bold text-ink">Surabaya Tunjungan</h3>
-        </div>
-        <p class="text-sm text-slate-400 mt-1">Jl. Tunjungan No. 12, Genteng, Surabaya</p>
-        <div class="flex items-center gap-4 mt-3 text-xs text-slate-400">
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
-            07.30 – 21.30
-          </span>
-          <span class="flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-            +62 012 3456 7890
-          </span>
-        </div>
-        <a href="https://maps.app.goo.gl/sxXvDWdHNwvcaWD97" target="_blank">
-        <button class="active:scale-95 mt-4 w-full rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white transition-all">Get Directions</button>
-        </a>
+      <div class="min-w-0">
+        <span class="text-[11px] font-semibold uppercase tracking-wider text-primary">Surabaya</span>
+        <h3 class="font-bold leading-tight text-ink">Surabaya Tunjungan</h3>
+        <address class="mt-1 text-sm not-italic text-slate-500">Jl. Tunjungan No. 12, Genteng, Surabaya</address>
       </div>
-    </article>
+    </header>
 
-  </div>
+    <ul class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+      <li class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5">
+        <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 7v5l3 2"/></svg>
+        <time datetime="07:30">07.30</time>–<time datetime="21:30">21.30</time>
+      </li>
+      <li>
+        <a href="tel:+6201234567890" class="flex items-center gap-1.5 rounded-full bg-slate-50 px-3 py-1.5 transition-colors hover:bg-primary/10 hover:text-primary">
+          <svg class="h-4 w-4 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+          +62 012 3456 7890
+        </a>
+      </li>
+    </ul>
+
+    <a href="https://maps.app.goo.gl/sxXvDWdHNwvcaWD97" target="_blank" rel="noopener noreferrer"
+      class="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-blue-700 py-2.5 text-sm font-bold text-white transition-all hover:bg-blue-800 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 [margin-top:max(1.25rem,auto)]">
+      Get Directions
+      <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </article>
+</div>
+
   <p id="emptyLoc" class="hidden text-center text-sm text-[#0B38A9]/70">No location found.</p>
 
 </section>

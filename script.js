@@ -110,7 +110,7 @@ function filterLocation() {
   }
 }
 
-searchLoc.addEventListener("input", applyFilter);
+searchLoc.addEventListener("input", filterLocation);
 
 locTabs.forEach((tab) => {
   tab.addEventListener("click", () => {
